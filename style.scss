@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(17,17,17,0.9);
+}
+.wraper{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: 50px 500px;
+    grid-template-areas: "top top top top top top top top top top top top"
+                         "menu menu menu content content content content content content content content content";
+    max-width:1170px;
+    height:auto;
+    margin:0 auto;
+    grid-gap: 10px;
+}
+.top{
+    grid-area: top;
+    background-color:green;
+    border:1px solid white
+}
+
+.menu{
+    grid-area:menu;
+    background-color:aqua;
+    border:1px solid gold
+}
+
+.content{
+    grid-area:content;
+    background-color:purple;
+    border:1px dotted greenyellow;
+}
+
+@media screen and (max-width: 900px){
+    .wraper {
+        grid-template-areas: "menu menu menu top top top top top top top top top"
+                         "content content content content content content content content content content content content";
+                        }
+}

@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(17, 17, 17, 0.9);
+}
+
+.wraper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[12];
+      grid-template-columns: repeat(12, auto);
+  -ms-grid-rows: 50px 500px;
+      grid-template-rows: 50px 500px;
+      grid-template-areas: "top top top top top top top top top top top top" "menu menu menu content content content content content content content content content";
+  max-width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  grid-gap: 10px;
+}
+
+.top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: top;
+  background-color: green;
+  border: 1px solid white;
+}
+
+.menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: menu;
+  background-color: aqua;
+  border: 1px solid gold;
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 9;
+  grid-area: content;
+  background-color: purple;
+  border: 1px dotted greenyellow;
+}
+
+@media screen and (max-width: 900px) {
+  .wraper {
+        grid-template-areas: "menu menu menu top top top top top top top top top" "content content content content content content content content content content content content";
+  }
+}
+/*# sourceMappingURL=style.css.map */
