@@ -604,4 +604,8 @@ body {
   .content_full{
     display:none;
   }
+    footer{
+        display:none;
+    }
+}
 /*# sourceMappingURL=style.css.map */
