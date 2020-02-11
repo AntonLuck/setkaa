@@ -2,10 +2,6 @@
 body {
     font-family: 'Roboto', sans-serif;
   }
-@media only screen and (max-width: 900px) {
-  .content_full{
-    display:none;
-  }
   .content {
     padding: 15px;
     max-width: 375px;
@@ -604,4 +600,8 @@ body {
     color: #4385DC;
   }
 }
+@media only screen and (max-width: 900px) {
+  .content_full{
+    display:none;
+  }
 /*# sourceMappingURL=style.css.map */
